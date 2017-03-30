@@ -36,7 +36,7 @@ Example:
 <script type="text/javascript">
   $(".first").sumTable({
     "skipFirstColumn" : true,
-    "totalText" : "Totais"
+    "totalText" : "Totals"
     "totalClass" : "anotherClassName"
   });
 </script>
