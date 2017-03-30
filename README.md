@@ -1,31 +1,52 @@
-# calcTable
-The calcTable.js is a small jQuery plugin to sum columns' numbers.
+#calcTable
 
-How to use it:
+#The calcTable.js is a small jQuery plugin to sum columns' numbers.
 
-1. Import the latest version of jQuery library and calcTable.js into your project:
 
-<script src="//code.jquery.com/jquery-3.2.0.slim.min.js"></script>
-<script src="calcTable.js"></script>
+#How to use it:
 
-2. Just call the function calcTable() on the html table and the plugin will do the rest:
+#1. Import the latest version of jQuery library and calcTable.js into your project:
 
-$(".myTable").calcTable();
+```<script src="//code.jquery.com/jquery-3.2.0.slim.min.js"></script>
+<script src="calcTable.js"></script>```
 
-3. The plugin allows you to skip the first row when performing the calculating:
+#2. Just call the function calcTable() on the html table and the plugin will do the rest:
 
-$(".myTable").calcTable({
+```$(".myTable").calcTable();```
+
+#3. The plugin allows you to skip the first row when performing the calculating:
+
+```$(".myTable").calcTable({
   "skipFirstColumn" : true
-});
+});```
 
-4. Change the default 'Total' text, if you need:
+#4. Change the default 'Total' text, if you need:
 
-$(".myTable").calcTable({
+```$(".myTable").calcTable({
   "totalText" : "Total"
-});
+});```
 
-5. Add extra CSS class(es) to the 'Total' row (next release):
+#5. Add extra CSS class(es) to the 'Total' row (next release):
 
-$(".myTable").calcTable({
+```$(".myTable").calcTable({
   "totalClass": "your-class"
+});```
+
+
+# Example
+
+
+```
+<script type="text/javascript">
+
+$(".first").sumTable({
+
+	"skipFirstColumn" : true,
+
+	"totalText" : "Totais"
+
+	"totalClass" : "anotherClassName"
+
 });
+</script>
+```
