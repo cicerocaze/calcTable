@@ -34,7 +34,7 @@ $(".myTable").calcTable({
 Example:
 ```javascript
 <script type="text/javascript">
-  $(".first").sumTable({
+  $(".myTable").calcTable({
     "skipFirstColumn" : true,
     "totalText" : "Totals"
     "totalClass" : "anotherClassName"
